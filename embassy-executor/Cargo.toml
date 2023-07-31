@@ -73,3 +73,7 @@ cortex-m = { version = "0.7.6", optional = true }
 # arch-wasm dependencies
 wasm-bindgen = { version = "0.2.82", optional = true }
 js-sys = { version = "0.3", optional = true }
+
+
+nrf-softdevice-s132 = { git = "https://github.com/embassy-rs/nrf-softdevice", rev = "a0467c55b09c4b48f4f5a428f6ba56734804b638"}
+
