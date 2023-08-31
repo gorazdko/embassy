@@ -138,7 +138,7 @@ mod thread_mode {
 
     pub(crate) fn in_thread_mode() -> bool {
         #[cfg(feature = "std")]
-        return Some("main") == std::thread::current().name();
+        return /*Some("main") == */std::thread::current().name().is_some();
 
         #[cfg(not(feature = "std"))]
         // ICSR.VECTACTIVE == 0
